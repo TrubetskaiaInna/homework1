@@ -2,20 +2,35 @@ html * {
   max-width: 2000px;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
   min-height: 365px;
-  margin-top: 10px;
 }
 
 .topHeader {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: gainsboro;
   flex-basis: 100%;
   min-height: 65px;
+}
+
+.size {
+  display: flex;
+  flex-basis: 1160px;
+  justify-content: space-between
+}
+
+.sizeMenuBack, .sizeFooter, .sizeAbout {
+  display: flex;
+  flex-basis: 1160px;
+  justify-content: space-between
 }
 
 .topHeaderLeft, .topHeaderRight {
@@ -77,7 +92,7 @@ header {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   flex-basis: 100%;
   min-height: 150px;
@@ -110,7 +125,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
-  justify-content: space-around;
+  justify-content: center;
   min-height: 50px;
   border-top: 2px solid lavender;
 }
@@ -173,7 +188,7 @@ header {
   align-items: center;
   justify-content: space-around;
   min-height: 885px;
-  background-image: url('./img/iback.png');
+  background-image: url('./assets/images/iback.png');
   background-repeat: no-repeat;
 }
 
@@ -201,12 +216,12 @@ header {
 }
 
 .sliderTextTwo {
-  width: 123px;
-  height: 80px;
+  width: 103px;
+  height: 105px;
 }
 
 .sliderTextThree {
-  width: 660px;
+  width: 712px;
   height: 45px;
   text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.15);
   color: #ffffff;
@@ -307,7 +322,7 @@ header {
   justify-content: center;
   flex-basis: 40%;
   flex-wrap: wrap;
-  padding-right: 50px;
+  padding-right: 115px;
 }
 
 .serviceRight {
@@ -315,7 +330,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   flex-basis: 40%;
-  margin-left: 50px;
+  margin-left: 115px;
 }
 
 .imgWrapper {
@@ -398,7 +413,7 @@ header {
 .sectionBox {
   display: flex;
   flex-wrap: wrap;
-  width: 1120px;
+  width: 1160px;
   justify-content: center;
   margin-top: 75px;
   margin-bottom: 75px;
@@ -411,6 +426,18 @@ header {
   flex-basis: 278px;
   min-height: 265px;
   background-color: white;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.boxEnd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 278px;
+  min-height: 265px;
+  background-color: white;
+  margin-bottom: 15px;
 }
 
 .back {
@@ -475,8 +502,9 @@ header {
 
 .BoxTeamWrapper {
   display: flex;
+  flex-basis: 1160px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -488,6 +516,16 @@ header {
   min-height: 394px;
   background-color: gainsboro;
   margin-right: 25px;
+  margin-top: 10px;
+}
+
+.sectionBoxTeamEnd {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 250px;
+  min-height: 394px;
+  background-color: gainsboro;
   margin-top: 10px;
 }
 
@@ -531,7 +569,7 @@ header {
   align-items: flex-end;
   flex-basis: 100%;
   min-height: 400px;
-  background-image: url('./img/map.png');
+  background-image: url('./assets/images/map.png');
   margin-top: 80px;
 }
 
@@ -575,14 +613,13 @@ footer {
   flex-basis: 100%;
   min-height: 263px;
   background-color: #2b2c2d;
-  margin-bottom: 20px;
 }
 
 .footer {
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .sectionSocial {
@@ -593,7 +630,7 @@ footer {
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -636,8 +673,14 @@ footer {
   border-right: 2px solid #414344;
 }
 
+.sectionInput {
+  display: flex;
+  flex-basis: 594px;
+}
+
 .input {
   display: flex;
+  flex-basis: 594px;
   justify-content: space-around;
   align-items: center;
   max-width: 594px;
@@ -651,19 +694,82 @@ footer {
   background-color: #393b3c;
   width: 300px;
   height: 40px;
-  border-color: #393b3c;
   color: #6d6e71;
+  border: 0;
 }
 
 .buttonFooter {
   width: 77px;
   height: 45px;
   border-radius: 10px;
-  background-color: #393b3c;
+  background-color: #494c4d;
   color: #6d6e71;
+  border: 0;
 }
 
-@media (max-width: 1137px) {
+@media (max-width: 1171px) {
+
+  html * {
+    max-width: 1171px;
+  }
+
+  .boxEnd {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 952px) {
+
+  html * {
+    max-width: 952px;
+  }
+
+  .sizeMenuBack {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 839px) {
+
+  html * {
+    max-width: 839px;
+  }
+
+  .sectionBoxTeamEnd {
+    margin-right: 25px;
+  }
+
+  .BoxTeamWrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .sliderDesign {
+    width: 450px;
+  }
+
+  .sliderTextOne {
+    font-size: 43px;
+  }
+
+  .sliderTextTwo{
+    width: 85px;
+    height: 65px;
+  }
+
+  .sliderTextThree {
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  .sizeFooter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .serviceLeft {
     border-right: 0;
     padding-right: 0;
@@ -677,32 +783,26 @@ footer {
   .serviceLeft {
     margin-top: 0;
   }
-}
 
-@media (max-width: 777px) {
-  .sliderDesign {
-    width: 450px;
+  .menu {
+    flex-wrap: wrap;
   }
 
-  .sliderTextOne {
-    font-size: 43px;
-  }
-
-  .sliderTextThree {
-    font-size: 30px;
-    margin-left: 50px;
+  .menuOne {
+    border-left: 2px solid lavender;
   }
 
 }
 
-@media (max-width: 765px) {
+@media (max-width: 734px) {
 
   html * {
-    max-width: 765px;
+    max-width: 734px;
   }
 
-  .topHeader {
-    flex-direction: column;
+  .size {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .topHeaderLeft, .topHeaderRight {
@@ -718,25 +818,30 @@ footer {
     margin-right: 10px;
   }
 
-  .menu {
-    flex-wrap: wrap;
-  }
-
-  .menuOne {
-    border-left: 2px solid lavender;
-  }
-
   .sliderWrapper {
     display: none;
   }
 
   .about {
+    flex-basis: 90%;
+  }
+
+  .sizeAbout {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .aboutLeft {
+    margin-right: 0;
+    flex-basis: 90%;
+  }
+
+  .aboutRight {
+    flex-basis: 90%;
   }
 
   .imgAboutLeft, .imgAboutRight {
-    width: 70px;
-    height: 80px;
+    display: none;
   }
 
   .imgServiceTitle {
@@ -765,15 +870,19 @@ footer {
     margin-top: 50px;
   }
 
+  .teamTitle {
+    width: 250px;
+  }
+
   .imgTeamTitle {
-    width: 70px;
-    height: 68px;
+    display: none;
   }
 
   .textProjectTitle {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 250px;
   }
 
   .imgProjectTitle {
@@ -800,21 +909,16 @@ footer {
     height: 50px;
   }
 
-  .inputFooter {
-    width: 200px;
-  }
-
-  .buttonFooter {
-    width: 60px;
+  .input {
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .imgSectionInput {
     display: none;
   }
-
-  .textFooter {
-    font-size: 8px;
-  }
-
 }
+
+
 
