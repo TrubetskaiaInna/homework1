@@ -696,6 +696,7 @@ footer {
   height: 40px;
   color: #6d6e71;
   border: 0;
+  outline: none;
 }
 
 .buttonFooter {
@@ -705,6 +706,7 @@ footer {
   background-color: #494c4d;
   color: #6d6e71;
   border: 0;
+  outline: none;
 }
 
 @media (max-width: 1171px) {
